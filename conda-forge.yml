@@ -8,4 +8,4 @@ conda_build:
 conda_forge_output_validation: true
 bot:
   automerge: true
-test_on_native_only: true
+test: native_and_emulated
