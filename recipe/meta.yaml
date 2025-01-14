@@ -1,5 +1,5 @@
 {% set name = "pyobjc-framework-CoreText" %}
-{% set version = "10.3.1" %}
+{% set version = "11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name.replace('-', '_').lower() }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
-  sha256: b8fa2d5078ed774431ae64ba886156e319aec0b8c6cc23dabfd86778265b416f
+  sha256: a68437153e627847e3898754dd3f13ae0cb852246b016a91f9c9cbccb9f91a43
 
 build:
   skip: true  # [not osx]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 
 requirements:
