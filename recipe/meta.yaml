@@ -1,5 +1,5 @@
 {% set name = "pyobjc-framework-CoreText" %}
-{% set version = "12.2.2" %}
+{% set version = "13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name.replace('-', '_').lower() }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
-  sha256: 64ddc02303217028e32e22c7cc00b5112d84e9d9a67c37d00c2e54f9172284ab
+  sha256: 9f5fbf067ad6990c178d79b888ed6da0ed7547c428f589ab3d905e1bca1f5d09
 
 build:
   number: 0
